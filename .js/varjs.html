@@ -11,33 +11,62 @@
          console.log("my name is"+myName);
          console.log(typeof(myName));
         //  number
-        var mymob=8218035315;
-        console.log("my mobile number is"+mymob);
-        console.log(typeof(mymob));
+        var myMob=8218035315;
+        console.log("my mobile number is"+myMob);
+        console.log(typeof(myMob));
         // break boolen
         var isMarried=true;
         console.log(myName+"is married?"+isMarried);
         console.log(typeof(isMarried));
         // undefined
         var myAdd;
-        console.log(myName+"address is"+myadd);
+        console.log(myName+"address is"+myAdd);
         console.log(typeof(myAdd));
         // null
         var myEmail=null;
         console.log(myName+"e-mail address is"+myEmail);
         console.log(typeof(myEmail));
         // bigint
-        var myValue=Bigint(9392739749830983);
+        var myValue=BigInt(9392739749830983);
         console.log(myValue);
         console.log(typeof(myValue));
         // symbol-unique primitive data value type in js
-        var val1=Symbol("hello");
-         var val2=Symbol("hello");
+        var val1=Symbol("Hello");
+         var val2=Symbol("Hello");
          console.log(val1==val2);
-         console.log(typeof(val1)+"and"+type(val2));
-
-
-
+         console.log(typeof(val1)+"and"+typeof(val2));
+// refrence and non primitive data TypeError
+// object{}-
+let myInfo={
+    name:"abhishek",
+    age:19,
+    mob:8218035315,
+    email:"abhishek@gmail.com",
+    isMarried:false,
+    address:null,
+    branch:"CSE",
+    section:18,
+};
+// to find lenth object
+console.log(myInfo);
+console.log(Object.keys(myInfo).lenth);
+console.log(myInfo.branch);
+// array-collection of nay data type in js
+let studentDetails=["Abhishek",24,false,"abhishek@gmail.com","gzb"];
+console.log(studentDetails[2]);
+console.log(studentDetails.lenth);
+for(i=0;i<studentDetails.lenth;i++){
+    console.log(studentdetails[i]);
+}
+// function block code perform task
+function myCal(){
+    let num1=5;
+    let num2=10;
+    let result=num1+num2;
+    console.log("addition of two number is"+(num1+num2));
+    console.log(result);
+}
+myCal();//function calling
 </script>
 </body>
 </html>
